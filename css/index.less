@@ -1,7 +1,7 @@
-.t-model{
-	width: 200px;
+.tp-model{
+	width: 160px;
 	height: 160px;
-	.inner-t-model{
+	.inner-tp-model{
 	  	display: flex;
 	  	flex-direction: column;
 	  	justify-content: space-between;
@@ -15,9 +15,42 @@
 			border: none;
 			color: #fff;
 			outline: none;
+			
 			&:hover{
 				background-color: #f15656;
 			}
 		}
 	}
+}
+.tp-count-down{
+	text-align: center;
+	color: #FC104E;
+	height: 100px;
+	p{
+		margin: 10px 0;
+	}
+	.tp-time{
+		display: flex;
+		span{
+			color: #fff;
+			background-color: #FC104E;
+			text-align: center;
+			width: 30px;
+			height: 30px;
+			line-height: 30px;
+		    font-size: 18px;
+		    border-radius: 6px;
+		}
+	}
+}
+p{
+	padding: 0;
+	margin: 0;
+}
+.mt-10{
+	margin-top: 10px;
+	
+}
+.hide{
+	display: none;
 }

@@ -6,10 +6,22 @@
 	<link rel="stylesheet" type="text/css" href="../css/index.css">
 </head>
 <body>
-	<div class="t-model">
-		<div class="inner-t-model">
-			<canvas id="myCanvas" width="100" height="100"></canvas>
-			<button class="btn">立即领取</button>
+	<div class="tp-model">
+		<div class="inner-tp-model">
+			<canvas id="myCanvas" width="100" height="100" data-total="111">已抢50%</canvas>
+			<button class="btn mt-10" onclick="reDraw('myCanvas',51)">立即领取</button>
+		</div>
+		<div class="inner-tp-model hide">
+			<div class="tp-count-down">
+				<p>距开抢还剩</p>
+				<div id="tpTime" class="tp-time">
+					<span></span>:
+					<span></span>:
+					<span></span>
+				</div>
+				<p>100人已提醒</p>
+			</div>
+			<button class="btn mt-10">提醒我</button>
 		</div>
 	</div>
 <script type="text/javascript" src="../js/index.js"></script>
