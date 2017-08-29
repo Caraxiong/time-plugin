@@ -1,18 +1,18 @@
-.tp-model {
+div[data-target="buyTime"] {
   width: 160px;
   height: 160px;
 }
-.tp-model div[data-canvas-box="canvasBox"],
-.tp-model div[data-cd-box="cdBox"] {
+div[data-target="buyTime"] div[data-canvas-box="canvasBox"],
+div[data-target="buyTime"] div[data-cd-box="cdBox"] {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
-.tp-model div[data-canvas-box="canvasBox"] button[data-canvas-btn="canvasBtn"],
-.tp-model div[data-cd-box="cdBox"] button[data-canvas-btn="canvasBtn"],
-.tp-model div[data-canvas-box="canvasBox"] button[data-cd-btn="cdBtn"],
-.tp-model div[data-cd-box="cdBox"] button[data-cd-btn="cdBtn"] {
+div[data-target="buyTime"] div[data-canvas-box="canvasBox"] button[data-canvas-btn="canvasBtn"],
+div[data-target="buyTime"] div[data-cd-box="cdBox"] button[data-canvas-btn="canvasBtn"],
+div[data-target="buyTime"] div[data-canvas-box="canvasBox"] button[data-cd-btn="cdBtn"],
+div[data-target="buyTime"] div[data-cd-box="cdBox"] button[data-cd-btn="cdBtn"] {
   height: 30px;
   line-height: 30px;
   text-align: center;
@@ -23,10 +23,10 @@
   outline: none;
   margin-top: 10px;
 }
-.tp-model div[data-canvas-box="canvasBox"] button[data-canvas-btn="canvasBtn"]:hover,
-.tp-model div[data-cd-box="cdBox"] button[data-canvas-btn="canvasBtn"]:hover,
-.tp-model div[data-canvas-box="canvasBox"] button[data-cd-btn="cdBtn"]:hover,
-.tp-model div[data-cd-box="cdBox"] button[data-cd-btn="cdBtn"]:hover {
+div[data-target="buyTime"] div[data-canvas-box="canvasBox"] button[data-canvas-btn="canvasBtn"]:hover,
+div[data-target="buyTime"] div[data-cd-box="cdBox"] button[data-canvas-btn="canvasBtn"]:hover,
+div[data-target="buyTime"] div[data-canvas-box="canvasBox"] button[data-cd-btn="cdBtn"]:hover,
+div[data-target="buyTime"] div[data-cd-box="cdBox"] button[data-cd-btn="cdBtn"]:hover {
   background-color: #f15656;
 }
 div[data-cd="cd"] {
