@@ -27,7 +27,7 @@ window.onload = () => {
 				span[2].innerHTML = format(parseInt(t / 1000 % 60))
 			}
 		},1000)
-	}	
+	}
 	// 倒计时部分
 	let startCountDown = (time) => {
 		//转日期格式
@@ -63,8 +63,8 @@ window.onload = () => {
 			}
 		}
 	}
-	startCountDown('2017-08-24 14:27:10')
-}	
+	startCountDown('2017-08-29 16:47:10')
+}
 	function reDraw(id){
 		let c = document.getElementById(id)
 		let btn = document.getElementsByClassName('btn')[0]
@@ -75,19 +75,19 @@ window.onload = () => {
 			mgLeft = c.getBoundingClientRect().left-document.documentElement.clientLeft,
 			yScroll,
 			xScroll
-		if (document.documentElement && document.documentElement.scrollTop) { 
+		if (document.documentElement && document.documentElement.scrollTop) {
 		    yScroll = document.documentElement.scrollTop;
 		    xScroll = document.documentElement.scrollLeft;
 	  	} else if (document.body) {// all other Explorers
 		    yScroll = document.body.scrollTop;
-		    xScroll = document.body.scrollLeft;  
+		    xScroll = document.body.scrollLeft;
 		}
 
 		//实际div距离浏览器左上角位置坐标
 		let actX = mgLeft+xScroll,
 		 	actY = mgTop+yScroll
 		*/
-		
+
     	//取分母
     	let maxPercent = Number(c.getAttribute('data-total'))
     	let percent = parseInt((value/maxPercent).toFixed(2)*100)
@@ -122,9 +122,9 @@ window.onload = () => {
 
 		//再次点击加
 		value++
-		
+
 		let cxt = c.getContext("2d")
-		// 清空画布 
+		// 清空画布
 		// cxt.clearRect(actX, actY, c_w, c_h)
 		//底层
 	    cxt.beginPath()
@@ -133,7 +133,7 @@ window.onload = () => {
 	    cxt.fillStyle = color
 	    cxt.fill()
 	    cxt.closePath()
-	 
+
 	    //进度层
 	    cxt.beginPath()
 		cxt.lineCap = "round"
@@ -142,7 +142,7 @@ window.onload = () => {
 	    cxt.fillStyle = fillColor
 	    cxt.fill()
 	    cxt.closePath()
-	 
+
 	    //顶层补色
 	    cxt.beginPath()
 	    cxt.moveTo(cirX,cirY)
@@ -150,7 +150,7 @@ window.onload = () => {
 	    cxt.fillStyle = bgColor
 	    cxt.fill()
 	    cxt.closePath()
-	     
+
 	    //文字
 	    cxt.font = 'bold 18px Arial'
 	    cxt.textAlign = 'center'

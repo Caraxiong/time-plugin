@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../lib/buy-time/buy-time.css">
+</head>
+<body>
+	<div class="tp-model" data-target="buyTime">
+	</div>
+<script type="text/javascript" src="../lib/buy-time/buy-time.js"></script>
+<script>
+    window.onload = () => {
+        buyTime.run('[data-target="buyTime"]',{
+			value : 0,
+			cdStartTime : '2017-08-29 16:54:20'
+		})
+    }
+</script>
+</body>
+</html>

@@ -1,12 +1,14 @@
 .tp-model{
 	width: 160px;
 	height: 160px;
-	.inner-tp-model{
+	div[data-canvas-box="canvasBox"],
+	div[data-cd-box="cdBox"]{
 	  	display: flex;
 	  	flex-direction: column;
 	  	justify-content: space-between;
 	    align-items: center;
-		.btn{
+		button[data-canvas-btn="canvasBtn"],
+		button[data-cd-btn="cdBtn"]{
 			height: 30px;
 			line-height: 30px;
 			text-align: center;
@@ -15,20 +17,21 @@
 			border: none;
 			color: #fff;
 			outline: none;
+			margin-top: 10px;
 			&:hover{
 				background-color: #f15656;
 			}
 		}
 	}
 }
-.tp-count-down{
+div[data-cd="cd"]{
 	text-align: center;
 	color: #FC104E;
 	height: 100px;
 	p{
 		margin: 10px 0;
 	}
-	.tp-time{
+	div[data-cd-time="cd-time"]{
 		display: flex;
 		span{
 			color: #fff;
@@ -45,11 +48,4 @@
 p{
 	padding: 0;
 	margin: 0;
-}
-.mt-10{
-	margin-top: 10px;
-
-}
-.hide{
-	display: none;
 }
